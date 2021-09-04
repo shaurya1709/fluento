@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<title>Vibra UI</title>
+<h1 class="logo">Vibra uI</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="api.html">API Documentation</a></li>
+  <li><a href="design.html">design</a></li>	
+  <li><a id="active">Demos</a></li>
+  <li><a href="credits.html">credits</a></li>	
+</ul>
+<h1 class="head">demos</h1>
+<h2 id="menubar">Menubar</h2>
+<ul class="navbar">
+  <li><a>Home</a></li>
+  <li><a>API Documentation</a></li>
+  <li><a id="active">Demos</a></li>	
+</ul>
+<h2 id="emoji">emoji</h2>
+<h3>tweMoji</h3>
+<p id="a">hi! 😀</p>
+<h3>device default</h3>
+<p>hi! 😀</p>
+<p class="attr">emoji by tweMoji</p>
+<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+<style>
+	@import url(style.css)
+</style>
+<script>
+twemoji.parse(document.getElementById('a'), {
+	folder: 'svg',
+	ext: '.svg',
+});
+console.log('TweMoji has been loaded')
+
+console.log('Vibra UI is active')
+	
+document.getElementsByClassName('attr')[0].remove()	
+
+for(var i = 0; i < document.getElementsByClassName('logo').length; i++) {
+	document.getElementsByClassName('logo')[i].setAttribute('onclick', 'window.location.href = "index.html"')
+}	
+</script>

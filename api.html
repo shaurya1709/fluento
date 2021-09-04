@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<title>Vibra UI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+<h1 class="logo">Vibra uI</h1>
+<ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a id="active">API Documentation</a></li>
+  <li><a href="design.html">design</a></li>	
+  <li><a href="demo.html">Demos</a></li>
+  <li><a href="credits.html">credits</a></li>
+</ul>
+
+<h1 class="head">aPI documentation</h1>
+<h1>cSS configuration</h1>
+<pre style="font-family: source code pro; font-size: 14px; text-transform: none;">
+:root {
+--main-color: /* the main color. used for things like backgrounds */
+--accent-color: /* the accent color. used for things like menubar backgrounds */
+--font-color: /* the color of the font used across the webpage */
+--font-color-alternate: /* an alternate font color used for menubar hovers and active menubar urls */
+--font: /* the font family to be used across the webpage */
+--page-margin: /* the margin used by the page body */
+--text-case-filter: /* text casing filters. possible values are capitalize, lowercase, uppercase and none */
+--scroll-style: /* set smooth scrolling for anchors leading to other elements on the page. possible values are smooth, auto */
+}
+</pre>
+<h1>classes</h2>
+<h2>navbar</h3>
+<p>specifies a navbar.</p>
+<p></p>
+<p><a href="demo.html#menubar">click here for example</a></p>
+<p>syntax:</p>
+<pre style="font-family: source code pro; font-size: 14px; text-transform: none;">
+&lt;ul class="navbar"&gt;
+  &lt;li>&lt;a href="page 1 url">Page 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a id="active"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<h3>active</h3>
+<p>the active iD is used inside a navbar to specify the active page and its styling.</p>
+<p>syntax:</p>
+<pre style="text-transform: none; font-family: source code pro; font-size: 14px;">&lt;li id="active"&gt;text&lt;/li&gt;</pre>
+<p class="attr">emoji by tweMoji</p>
+<h2>shadowed</h2>
+<p>adds a shadow to the element using the <span style="font-family: source code pro; font-size: 14px; text-transform: none;">box-shadow</span> property</p>
+<style>
+	@import url(style.css);
+			
+	h2,h3 {text-transform: none;}
+</style>
+<script src="latest.js"></script>
