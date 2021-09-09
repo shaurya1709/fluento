@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <title>Vibra UI</title>
 <h1 class="logo">Vibra uI</h1>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta charset="utf-8">
-<ul class="navbar">
+<ul class="navbar glow sticky">
   <li><a href="index.html">Home</a></li>
   <li><a href="api.html">API Documentation</a></li>
   <li><a href="design.html">design</a></li>	
@@ -11,16 +11,45 @@
   <li><a href="credits.html">credits</a></li>	
 </ul>
 <h1 class="head">demos</h1>
-<h2 id="menubar">Menubar</h2>
+<h1>classes</h1>
+<h2 id="navbar-demo">navbar</h2>
 <ul class="navbar">
-  <li><a>Home</a></li>
-  <li><a>API Documentation</a></li>
-  <li><a id="active">Demos</a></li>	
+	<li><a>Page 1</a></li>
+	<li><a id="active">Page 2</a></li>
 </ul>
-<h2 id="emoji">emoji</h2>
-<h3>tweMoji</h3>
+<h1>class pairs</h1>
+<h2>glow</h2>
+<h3>button</h3>
+<button class="glow">button</button>
+<h3>navbar</h3>
+<ul class="navbar glow">
+	<li><a>Page 1</a></li>
+	<li><a id="active">Page 2</a></li>
+</ul>
+<h2>push</h2>
+<h3>button</h3>
+<button class="push">button</button>
+<h3>navbar</h3>
+<ul class="navbar push">
+	<li><a>Page 1</a></li>
+	<li><a id="active">Page 2</a></li>
+</ul>
+<h2 id="ccp">combining class pairs</h2>
+<p>a navbar with classes glow and push</p>
+<ul class="navbar glow push">
+	<li><a>Page 1</a></li>
+	<li><a id="active">Page 2</a></li>
+</ul>
+<h2></h2>
+<h1>animations</h1>
+<h2>spin</h2>
+<button class="animation spin slow infinite">i spin!</button>
+<h2>fadeback</h2>
+<p class="animation fadeback slow infinite">i fade in and out</p>
+<h1 id="emoji">emoji</h1>
+<h2>tweMoji</h2>
 <p id="a">hi! 😀</p>
-<h3>device default</h3>
+<h2>device default</h2>
 <p>hi! 😀</p>
 <p class="attr">emoji by tweMoji</p>
 <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
