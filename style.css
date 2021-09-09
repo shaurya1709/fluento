@@ -2,8 +2,8 @@
 	:root {
 		--main-color: white;
 		--accent-color: rgb(0, 124, 249);
-		--font-color: #292D3E;
-		--font-color-alternate: #fff;	
+		--text-color: #292D3E;
+		--text-color-alternate: #fff;	
 		--font: atkinson hyperlegible;	
 		--page-margin: 0px 150px;
 		--text-case-filter: capitalize;
