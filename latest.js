@@ -12,3 +12,6 @@ console.log('TweMoji has been loaded')
 console.log('Vibra UI is active')
 
 document.getElementsByClassName('attr')[0].remove()
+
+document.getElementsByClassName('navbar')[0].classList.add('glow');
+document.getElementsByClassName('navbar')[0].classList.add('push');
