@@ -9,27 +9,15 @@ scroll-behavior: var(--scroll-style);
 	}
 }
 
-button {border-radius: 124567890px; background: var(--accent-color); border: none; color: var(--font-color-alternate); padding: 10px 50px; font-family: var(--font); font-weight: bold;}
+button {border-radius: 124567890px; background: var(--accent-color); border: none; color: var(--text-color-alternate); padding: 10px 50px; font-family: var(--font); font-weight: bold; font-family: var(--font)}
 
-button:active {
-	-webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-}
+body {font-family: var(--font); background: var(--main-color); color: var(--text-color); text-transform: var(--text-case-filter); margin: var(--page-margin);}
 
-body {font-family: var(--font); background: var(--main-color); color: var(--font-color); text-transform: var(--text-case-filter); margin: var(--page-margin);}
-
-	body > *, .navbar li a {
- 	transition:all 0.3s ease !important;
+body * {
+	transition:all 0.3s ease !important;
 }
 
 a {text-decoration: none; color: var(--accent-color);}
-
-.navbar li a:active:not(#active) {
-	-webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-}
 
 	img.emoji {
    		height: 1em;
@@ -48,9 +36,15 @@ a {text-decoration: none; color: var(--accent-color);}
   	}
 	
 	ul.navbar.sticky {
+		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
-}
+		overflow:hidden;
+	}
+
+	ul.navbar.glow li a:hover {
+		box-shadow:0 0 5px var(--accent-color);
+	}
 
 	.navbar li {
   		float: left;
@@ -59,7 +53,7 @@ a {text-decoration: none; color: var(--accent-color);}
 
 	.navbar li a {
   		display: block;
-  		color: var(--font-color);
+  		color: var(--text-color);
   		text-align: center;
   		padding: 14px 16px;
   		text-decoration: none;
@@ -68,17 +62,25 @@ a {text-decoration: none; color: var(--accent-color);}
 		user-select: none;
 	}
 
-.navbar li a:hover:not(#active) {
+	.navbar li a:hover {
   		background-color: var(--accent-color);
-		color: var(--font-color-alternate);
-		box-shadow:0 0 5px var(--accent-color);
-}
-
-	.navbar #active {
-  		background-color: var(--accent-color);
-		color: var(--font-color-alternate);
-		box-shadow:0 0 5px var(--accent-color);
+		color: var(--text-color-alternate);
 	}
+
+	button.glow:hover {
+		box-shadow:0 0 5px var(--accent-color);	
+	}
+
+	ul.navbar.glow li a#active {
+		box-shadow:0 0 5px var(--accent-color);
+		background-color: var(--accent-color);
+		color: var(--text-color-alternate);
+	}
+
+ul.navbar #active {
+  	background-color: var(--accent-color);
+	color: var(--text-color-alternate);
+}
 
 .shadowed {
 	box-shadow: 5px 10px 8px lightgrey; 
@@ -94,4 +96,60 @@ a {text-decoration: none; color: var(--accent-color);}
 ::-webkit-scrollbar-thumb {
   background: var(--accent-color);
   border-radius: 9px;	
+}
+
+.button.sticky {
+	position: sticky;
+}
+
+@keyframes frgh1 {
+	to{transform: rotate(360deg)}
+}
+
+@keyframes frgh2 {
+	50% {opacity: 0}
+	to {opacity: 1}
+}
+
+.animation.spin {
+	animation: frgh1;
+}
+
+.animation.fadeback {
+	animation: frgh2;
+}
+
+.animation.regular {
+	animation-duration: 1s;
+}
+
+.animation.faster {
+	animation-duration: 0.25s;
+}
+.animation.fast {
+	animation-duration: 0.5s;
+}
+.animation.slow {
+	animation-duration: 1.5s;
+}
+
+.animation.slower {
+	animation-duration: 2s;
+}
+
+
+.animation.infinite {
+	animation-iteration-count: infinite;
+}
+
+.animation.once {
+	animation-iteration-count: 1;
+}
+
+.navbar.push li a:active {
+	transform: scale(0.8);
+}
+
+button.push:active {
+	transform: scale(0.8);
 }
