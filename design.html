@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <title>Vibra UI</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-<h1 class="logo">Vibra uI</h1>
-<ul class="navbar sticky">
+
+<h1 class="logo" onclick="window.location.href = 'index.html'">Vibra uI</h1>
+<ul class="navbar sticky glow push">
   <li><a href="index.html">Home</a></li>
   <li><a href="api.html">API Documentation</a></li>
   <li><a id="active">design</a></li>	
   <li><a href="demo.html">Demos</a></li>
-  <li><a href="credits.html">credits</a></li>	
+  <li><a href="credits.html">credits</a></li>
+  <li><a href="addons.html">addons</a></li>	
 </ul>
 <h1 class="head">design</h1>
 <h1>typography</h1>
@@ -49,11 +50,14 @@ Mauris hendrerit malesuada odio, id venenatis dui varius ac. Aliquam suscipit ma
 Donec pulvinar sem nec ipsum tempus, eget dapibus felis vehicula. Quisque commodo sagittis cursus. Curabitur felis augue, egestas dapibus condimentum eu, aliquet et</p></div>
 <h2>Gradients</h2>
 <p>vibra design strongly discourages use of gradients. they do look good at some places however, they are not the best for a uI. instead we recommend solid colors</p>
-<h2>Emoji</h2>
+<h1>Emoji</h2>
 <p>the vibra design api uses tweMoji as it is consistent with no compactibility issues and fits in well with the style of vibra design. there is no setup. just connect the scripts mentioned  in the <a href="index.html#req">requirements</a></p>
 <a href="demo.html#emoji">click here for example</a>
-<p class="attr">emoji by tweMoji</p>
-<script src="latest.js"></script>
+<h1>icons</h1>
+<p>icons should be easy to grasp and understand. vibra uI uses icons by the jam icons project. <a href="https://jam-icons.com">click here to have a look</a>. <a href="https://github.com/michaelampr/jam">check out the github repository.</a> Example:</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 24 24" width="24" height="24" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M8 6.641l1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0v5.641zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z"></path>
+<p>this is the download icon</p>	
+
 <style>
 	@import url(style.css);
 </style>
