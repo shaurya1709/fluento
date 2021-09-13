@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <title>Vibra UI</title>
-<h1 class="logo">Vibra uI</h1>
-
+<h1 class="logo" onclick="window.location.href = 'index.html'">Vibra uI</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<ul class="navbar glow sticky">
+<ul class="navbar glow sticky push">
   <li><a href="index.html">Home</a></li>
   <li><a href="api.html">API Documentation</a></li>
   <li><a href="design.html">design</a></li>	
   <li><a id="active">Demos</a></li>
-  <li><a href="credits.html">credits</a></li>	
+  <li><a href="credits.html">credits</a></li>
+  <li><a href="addons.html">addons</a></li>	
 </ul>
 <h1 class="head">demos</h1>
 <h1>classes</h1>
@@ -17,57 +18,87 @@
 	<li><a>Page 1</a></li>
 	<li><a id="active">Page 2</a></li>
 </ul>
+<p>source code:</p>
+<pre class="code">
+&lt;ul class="navbar"&gt;
+	&lt;li&gt;&lt;a&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li>&lt;a id="active">Page 2&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
 <h1>class pairs</h1>
 <h2>glow</h2>
 <h3>button</h3>
 <button class="glow">button</button>
+<p>source code:</p>
+<pre class="code">
+&lt;button class="glow">button&lt;/button>
+</pre>
 <h3>navbar</h3>
 <ul class="navbar glow">
 	<li><a>Page 1</a></li>
 	<li><a id="active">Page 2</a></li>
 </ul>
+<p>source code:</p>
+<pre class="code">
+&lt;ul class="navbar glow"&gt;
+	&lt;li&gt;&lt;a&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li>&lt;a id="active">Page 2&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
 <h2>push</h2>
 <h3>button</h3>
 <button class="push">button</button>
+<p>source code:</p>
+<pre class="code">
+&lt;button class="push">button&lt;/button>
+</pre>
 <h3>navbar</h3>
 <ul class="navbar push">
 	<li><a>Page 1</a></li>
 	<li><a id="active">Page 2</a></li>
 </ul>
+<p>source code:</p>
+<pre class="code">
+&lt;ul class="navbar push"&gt;
+	&lt;li&gt;&lt;a&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li>&lt;a id="active">Page 2&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
 <h2 id="ccp">combining class pairs</h2>
 <p>a navbar with classes glow and push</p>
 <ul class="navbar glow push">
 	<li><a>Page 1</a></li>
 	<li><a id="active">Page 2</a></li>
 </ul>
-<h2></h2>
+<p>source code:</p>
+<pre class="code">
+&lt;ul class="navbar glow push"&gt;
+	&lt;li&gt;&lt;a&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li>&lt;a id="active">Page 2&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
 <h1>animations</h1>
 <h2>spin</h2>
 <button class="animation spin slow infinite">i spin!</button>
+<p>Source Code</p>
+<pre class="code">
+&lt;button class="animation spin slow infinite">i spin!&lt;/button>
+</pre>
 <h2>fadeback</h2>
 <p class="animation fadeback slow infinite">i fade in and out</p>
+<p>Source Code</p>
+<pre class="code">
+&lt;p class="animation fadeback slow infinite">i fade in and out&lt;/button>
+</pre>
 <h1 id="emoji">emoji</h1>
-<h2>tweMoji</h2>
-<p id="a">hi! 😀</p>
-<h2>device default</h2>
+<h2>Noto Color Emoji</h2>
 <p>hi! 😀</p>
-<p class="attr">emoji by tweMoji</p>
-<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+<p>noto color emoji supports all the latest emojis from android 12</p>
+<h2>device default</h2>
+<p style="font-family: sans-serif">hi! 😀</p>
+
 <style>
-	@import url(style.css)
-</style>
-<script>
-twemoji.parse(document.getElementById('a'), {
-	folder: 'svg',
-	ext: '.svg',
-});
-console.log('TweMoji has been loaded')
-
-console.log('Vibra UI is active')
+	@import url(style.css);
 	
-document.getElementsByClassName('attr')[0].remove()	
-
-for(var i = 0; i < document.getElementsByClassName('logo').length; i++) {
-	document.getElementsByClassName('logo')[i].setAttribute('onclick', 'window.location.href = "index.html"')
-}	
-</script>
+	.code {font-family: source code pro; font-size: 14px; text-transform: none;}	
+</style>
