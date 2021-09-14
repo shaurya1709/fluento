@@ -5,6 +5,10 @@
 	src: url(emoji.ttf);
 }
 
+@font-face {
+	font-family: EmojiDesktop;
+	src: url(emojidesktop.ttf);
+}
 html {
 scroll-behavior: var(--scroll-style);
 }
