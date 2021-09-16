@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <title>Vibra UI</title>
-<link rel="icon" href="icon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="icon.svg">
 <h1 class="logo" onclick="window.location.href = 'index.html'">Vibra uI</h1>
 <ul class="navbar glow sticky push">
   <li><a id="active">Home</a></li>
@@ -12,11 +12,41 @@
   <li><a href="addons.html">addons</a></li>	
 </ul>
 <h1>Introduction</h2>
-<p>vibra uI is an aPI allowing developers to create beautiful webApps faster than ever for free! see the demos page if you want to have a look at what we are talking about.</p>
-<h1 id="req">Requirements</h2>
-<h3>Styles</h3>
-<pre style="font-size: 14px; font-family: source code pro; text-transform: none;">@import url(https://shaurya1709.github.io/vibra-UI/api.css);</pre>
-<h3>configuration</h3>
+<p>vibra uI is a cSS only aPI allowing developers to create beautiful webApps faster and easier than ever for free!</p>
+<h1>advantages over other aPIs</h1>
+<p>for this comparison, we will compare vibra uI with React</p>
+<table>
+	<tr>
+		<th>topic</th>
+		<th>vibra uI 1 release candidate 1</th>
+		<th>react 17</th>
+	</tr>
+	<tr>
+		<td>setup</td>
+		<td>add the css file via the @import query</td>
+		<td>import 2 scripts</td>
+	</tr>
+	<tr>
+		<td>file size</td>
+		<td>8 kB (Including mobile styling)</td>
+		<td>11 kB</td>
+	</tr>
+	<tr>
+		<td>configuration</td>
+		<td>cSS-based</td>
+		<td>javaScript-based</td>
+	</tr>
+	<tr>
+		<td>emoji</td>
+		<td>noto color emoji</td>
+		<td>browser default</td>
+	</tr>
+</table>
+<h4>note: vibra uI is only supported on chromium based browsers.</h4>
+<h1 id="req">Requirements</h1>
+<h2>Styles</h3>
+<pre style="font-size: 14px; font-family: source code pro; text-transform: none;">@import url(https://vibraui.netlify.app/api.css);</pre>
+<h2>configuration</h3>
 <pre style="font-size: 14px; font-family: source code pro; text-transform: none;">
 &lt;style&gt;
 :root {
@@ -31,7 +61,7 @@
 <p>visit our <a href="api.html">aPI documentation</a> to learn more</p>
 <h2>attribution</h2>
 <h4>Please read this section carefully</h4>
-<p>attribution is required for twemoji.(in credits) no other attribution is required</p>
+<p>attribution is required for noto color emoji licensed under the apache license 2.0</p>
 
 <style>
 	@import url(style.css);
