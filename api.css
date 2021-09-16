@@ -3,6 +3,12 @@
 	to{transform: rotate(360deg)}
 }
 
+	
+@font-face {
+	font-family: Emoji;
+	src: url(emoji.ttf)	
+}
+
 @keyframes frgh2 {
 	50% {opacity: 0}
 	to {opacity: 1}
@@ -50,6 +56,10 @@
 button.push:active {
 	transform: scale(0.8);
 }
+
+
+body {font-family: var(--font), Emoji, var(--font-type), sans-serif;}
+
 @media (hover: none) {
 	html {
 scroll-behavior: var(--scroll-style);
@@ -82,12 +92,6 @@ table tr:first-of-type {
   color: var(--text-color-alternate);
   margin: 0px;	
 }
-	
-@font-face {
-	font-family: Emoji;
-	src: url(emoji.ttf)	
-}
-body {font-family: var(--font), Emoji, var(--font-type), sans-serif;}	
 
 button.icon-button svg {height: 1rem;}
 
