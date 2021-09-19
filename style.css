@@ -1,7 +1,7 @@
 @import url(api.css);
 	:root {
 		--main-color: white;
-		--accent-color: rgb(0, 124, 249);
+		--accent-color: #007cf9;
 		--text-color: #292D3E;
 		--text-color-alternate: #fff;	
 		--font: atkinson hyperlegible;	
@@ -27,3 +27,15 @@
 	cursor: pointer;
 	display: inline-block;
 }
+
+@media(hover:none) {
+	
+.logo {
+	  display: inline-block;
+  position: relative;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+}
+
+.code {font-family: source code pro; font-size: 0.9rem; text-transform: none;}
