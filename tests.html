@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<form>
+<fieldset>
+  <legend>required details</legend>
+  <label>date of birth:</label>
+	<input type="date" required>
+	<br>
+  <label>Full Name:</label>
+  <input required type="text" spellcheck="false"><br>
+  <label>Email Address:</label>	
+  <input type="email">
+  <button type="submit" class="push" style="display: block; margin-top: 1vh; float: right;">ok</button>	
+ </fieldset>
+</form>
+<style>
+	@import url(style.css);
+	fieldset {
+		border: solid var(--accent-color) 1px;
+		border-radius: 12px
+	}
+	
+	input {
+		border-radius: 1234567890px;
+		outline: none;
+		padding: 0px 1vh;
+		font-family: inherit;
+		border: solid var(--accent-color) 1px;
+	}
+	
+	input[required] {
+		border: solid red 0.2px;
+	}
+	
+	input[required]:focus {
+		box-shadow:0 0 2px red;
+	}
+	
+	input:focus {
+		transition: box-shadow 0.1s ease;
+		box-shadow:0 0 2px var(--accent-color);
+	}
+</style>
