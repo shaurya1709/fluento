@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Baloo+Bhaina+2&family=Baloo+Chettan+2&family=Baloo+Da+2&family=Baloo+Paaji+2&family=Baloo+Tamma+2&family=Baloo+Tammudu+2&family=Baloo+Thambi+2&Work+Sans&family=Open+Sans&family=Montserrat&family=Noto+Sans&family=Neucha&family=Source+Code+Pro&family=Roboto+Mono&family=Amatic+SC&family=Roboto&family=Inter&family=Roboto+Slab&family=Roboto+Condensed&family=Raleway&family=Merriweather&family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&family=Quicksand&family=Space+Mono&family=DM+Mono&family=DM+Sans&family=DM+Serif+Text&family=DM+Serif+Display&family=Work+Sans&family=Titillium+Web&family=Lobster&family=Comfortaa&family=Staatliches&family=Pacifico&family=Permanent+Marker&family=Patrick+Hand&family=Poppins&family=Alegreya&family=B612&family=Muli&family=Varela&family=Vollkorn&family=IBM+Plex+Sans&family=Crimson+Text&family=Cairo&family=BioRhyme&family=Karla&family=Lora&family=Frank+Ruhl+Libre&family=Playfair+Display&family=Archivo&family=Spectral&family=Fjalla+One&family=Rubik&family=Source+Sans+Pro&family=Cardo&family=Cormorant&family=Rakkas&family=Concert+One&family=Yatra+One&family=Orvo&family=Lato&family=Abril+Fatface&family=PT+Serif&family=Old+Standard+TT&&family=Oswald&family=Arvo&family=IBM+Plex+Serif&family=IBM+Plex+Mono&family=Qahiri&family=Zen+Loop&family=Lexend&family=Asar&family=Hahmlet&family=Vibur&family=Josefin+Slab&family=Style+Script&family=Atkinson+Hyperlegible&family=Space+Grotesk&family=Nunito&family=Inconsolata&family=Yomogi&family=Alegreya+SC&family=Mulish&family=Hind+Siliguri&family=Georama&family=Andada+Pro&family=Recursive&family=Heebo&family=Libre+Franklin&family=Epilogue&family=Rhodium+Libre&family=Nunito+Sans&family=Qahiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Baloo+Bhaina+2&family=Baloo+Chettan+2&family=Baloo+Da+2&family=Baloo+Paaji+2&family=Baloo+Tamma+2&family=Baloo+Tammudu+2&family=Baloo+Thambi+2&Work+Sans&family=Open+Sans&family=Montserrat&family=Noto+Sans&family=Neucha&family=Source+Code+Pro&family=Roboto+Mono&family=Amatic+SC&family=Roboto&family=Inter&family=Roboto+Slab&family=Roboto+Condensed&family=Raleway&family=Merriweather&family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&family=Quicksand&family=Space+Mono&family=DM+Mono&family=DM+Sans&family=DM+Serif+Text&family=DM+Serif+Display&family=Work+Sans&family=Titillium+Web&family=Lobster&family=Comfortaa&family=Staatliches&family=Pacifico&family=Permanent+Marker&family=Patrick+Hand&family=Poppins&family=Alegreya&family=B612&family=Mnavi&family=Varela&family=Vollkorn&family=IBM+Plex+Sans&family=Crimson+Text&family=Cairo&family=BioRhyme&family=Karla&family=Lora&family=Frank+Ruhl+Libre&family=Playfair+Display&family=Archivo&family=Spectral&family=Fjalla+One&family=Rubik&family=Source+Sans+Pro&family=Cardo&family=Cormorant&family=Rakkas&family=Concert+One&family=Yatra+One&family=Orvo&family=Lato&family=Abril+Fatface&family=PT+Serif&family=Old+Standard+TT&&family=Oswald&family=Arvo&family=IBM+Plex+Serif&family=IBM+Plex+Mono&family=Qahiri&family=Zen+Loop&family=Lexend&family=Asar&family=Hahmlet&family=Vibur&family=Josefin+Slab&family=Style+Script&family=Atkinson+Hyperlegible&family=Space+Grotesk&family=Nunito&family=Inconsolata&family=Yomogi&family=Alegreya+SC&family=Mnavish&family=Hind+Siliguri&family=Georama&family=Andada+Pro&family=Recursive&family=Heebo&family=Libre+Franklin&family=Epilogue&family=Rhodium+Libre&family=Nunito+Sans&family=Qahiri&display=swap");
+	
+@font-face {
+	font-family: Emoji;
+	src: url(emoji.ttf)	
+}
+
+	button.push:active {
+		transform: scale(0.8)
+	}
 
 table {
   border-collapse: collapse;
@@ -20,8 +29,6 @@ table tr:first-of-type {
   color: var(--text-color-alternate);
   margin: 0px;	
 }
-
-
 	
 table {
   border-collapse: collapse;
@@ -43,79 +50,105 @@ table th {
   color: var(--text-color-alternate);	
 }
 
-@keyframes frgh1 {
+@keyframes spin {
 	to{transform: rotate(360deg)}
 }
-	
-@font-face {
-	font-family: Emoji;
-	src: url(emoji.ttf)	
-}
 
-@keyframes frgh2 {
-	50% {opacity: 0}
+@keyframes fadeback {
+	from {opacity: 0}
+	100% {opacity: 0}
 	to {opacity: 1}
 }
 
-.animation.spin {
-	animation: frgh1;
+@keyframes flip {
+	to {transform: rotateY(360deg)}
 }
 
-.animation.fadeback {
-	animation: frgh2;
+@keyframes slidedown {
+	from {opacity: 0}
+	to {transform: translateY(100%); opacity: 1;}
 }
 
-.animation.regular {
-	animation-duration: 1s;
+@keyframes slideup {
+	from {opacity: 0}
+	to {transform: translateY(-100%); opacity: 1;}
 }
 
-.animation.faster {
-	animation-duration: 0.25s;
-}
-.animation.fast {
-	animation-duration: 0.5s;
-}
-.animation.slow {
-	animation-duration: 1.5s;
+@keyframes slideleft {
+	from {opacity: 0}
+	to {transform: translateX(-100%); opacity: 1;}
 }
 
-.animation.slower {
-	animation-duration: 2s;
+@keyframes slideright {
+	from {opacity: 0}
+	to {transform: translateX(100%); opacity: 1;}
+}
+@keyframes fade {
+	from {opacity: 0}
+	to {opacity: 1}
 }
 
-
-.animation.infinite {
-	animation-iteration-count: infinite;
+@keyframes zoom {
+	from {transform: scale(0.1); font-size: 0.1rem;}
+	to {transform: scale(1); font-size: 1rem;}
 }
 
-.animation.once {
-	animation-iteration-count: 1;
+    @keyframes bounce {
+        0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-100px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(-7px); }
+        64%  { transform: scale(1,1)      translateY(0); }
+        100% { transform: scale(1,1)      translateY(0); }
+    } 
+
+body {font-family: var(--font), Emoji, Noto Sans, var(--font-type), sans-serif; overflow-x: hidden; background: var(--main-color); color: var(--text-color); text-transform: var(--text-case-filter); transition: all 0.3s ease}
+
+body * {
+	transition: inherit;
 }
 
-.navbar.push li a:active {
-	transform: scale(0.8);
+button.icon-button svg {height: 1rem; float: left; margin-left: 0px !important}
+
+button.icon-button {
+	display: flex; justify-content: center; align-items: center; text-transform: var(--text-case-filter);
 }
 
-button.push:active {
-	transform: scale(0.8);
-}
+	ul.navbar.push li a:active {
+		transform: scale(0.8)
+	}
 
-@media (hover: none) {
+a {text-decoration: none; color: var(--accent-color);}
+
 	html {
 scroll-behavior: var(--scroll-style);
 }
 
-	.navbar li {width: 100%;}
-	
-	.navbar li a {width: 100%;}	
-	
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
 	}
 }
+
 	
-body {font-family: var(--font), Emoji, var(--font-type), sans-serif; overflow-x: hidden;}
+.shadowed {
+	box-shadow: 5px 10px 8px lightgrey; 
+}
+
+
+button {border-radius: 124567890px; background: var(--accent-color); border: none; color: var(--text-color-alternate); padding: 10px 50px; font-family: var(--font); font-weight: bold; font-family: var(--font); fill: var(--text-color-alternate); text-transform: var(--text-case-filter);}
+
+
+/* Mobile */
+@media (hover: none) {
+	
+	body {overflow-x: scroll; -webkit-tap-highlight-color: transparent}
+	
+	body * {overflow-x: inherit;}
+	
+	.navbar li a {width: 100%;}	
+	
 
 	button {width: 100%}
 	
@@ -125,28 +158,15 @@ button.icon-button {
 	text-transform: var(--text-case-filter);
 }
 
-button {border-radius: 124567890px; background: var(--accent-color); border: none; color: var(--text-color-alternate); padding: 10px 50px; font-family: var(--font); font-weight: bold; font-family: var(--font); fill: var(--text-color-alternate); text-transform: var(--text-case-filter);}
-
-body {background: var(--main-color); color: var(--text-color); text-transform: var(--text-case-filter);}
-
-body * {
-	transition:all 0.3s ease;
-	overflow-x: scroll;
-	-webkit-tap-highlight-color: transparent;
-}
 	
-	button, button * {overflow-x: hidden;}	
-
-a {text-decoration: none; color: var(--accent-color);}
+	button, button * {overflow-x: hidden;}
 
 	ul.navbar {
   		list-style-type: none;
   		overflow-x: hidden;
 		background: var(--main-color);
-		text-align: center;
 		display: inline-grid;
 		margin: 0px;
-		text-align: center;
 		justify-content: center;
 		width: 100vw;
 		padding-inline-start: 0px;
@@ -183,11 +203,8 @@ ul.navbar * {
 ul.navbar li a#active {
   	background: var(--accent-color);
 	color: var(--text-color-alternate);
-}
+}	
 
-.shadowed {
-	box-shadow: 5px 10px 8px lightgrey; 
-}
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -200,47 +217,11 @@ ul.navbar li a#active {
   background: var(--accent-color);
   border-radius: 9px;	
 }
-
-.button.sticky {
-	position: sticky;
-}
 }
 /* Desktop */
-@media (hover: hover) {
-	html {
-scroll-behavior: var(--scroll-style);
-}
+@media (hover: hover) {	
 
-@media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
-}
-	
-body {font-family: var(--font), Emoji, var(--font-type), sans-serif;}	
-
-button.icon-button svg {height: 1rem;}
-
-button.icon-button {
-	display: flex; justify-content: center; align-items: center; text-transform: var(--text-case-filter);
-}
-
-button {border-radius: 124567890px; background: var(--accent-color); border: none; color: var(--text-color-alternate); padding: 10px 50px; font-family: var(--font); font-weight: bold; font-family: var(--font); fill: var(--text-color-alternate); text-transform: var(--text-case-filter);}
-
-body {background: var(--main-color); color: var(--text-color); text-transform: var(--text-case-filter); margin: var(--page-margin);}
-
-body * {
-	transition:all 0.3s ease;
-}
-
-a {text-decoration: none; color: var(--accent-color);}
-
-	img.emoji {
-   		height: 1em;
-   		width: 1em;
-   		margin: 0 .05em 0 .1em;
-   		vertical-align: -0.1em;
-	}
+body { margin: var(--page-margin);}	
 
 	ul.navbar {
   		list-style-type: none;
@@ -292,19 +273,12 @@ a {text-decoration: none; color: var(--accent-color);}
 		background-color: var(--accent-color);
 		color: var(--text-color-alternate);
 	}
-	
-	ul.navbar.push li a:active {
-		transform: scale(0.8)
-	}
 
 ul.navbar li a#active {
   	background-color: var(--accent-color);
 	color: var(--text-color-alternate);
 }
-
-.shadowed {
-	box-shadow: 5px 10px 8px lightgrey; 
-}
+	
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -316,9 +290,5 @@ ul.navbar li a#active {
 ::-webkit-scrollbar-thumb {
   background: var(--accent-color);
   border-radius: 9px;	
-}
-
-.button.sticky {
-	position: sticky;
-}
+}	
 }
