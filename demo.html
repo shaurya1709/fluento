@@ -1,31 +1,132 @@
 <!DOCTYPE html>
 <title>Vibra UI</title>
-<link rel="icon" href="icon.svg">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <h1 class="logo" onclick="window.location.href = 'index.html'">Vibra uI</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link rel="icon" href="icon.svg">
 <ul class="navbar glow sticky push">
   <li><a href="index.html">Home</a></li>
   <li><a href="api.html">API Documentation</a></li>
   <li><a href="design.html">design</a></li>	
-  <li><a href="demo.html">Demos</a></li>
-  <li><a id="active">credits</a></li>
-  <li><a href="addons.html">addons</a></li>
+  <li><a id="active">Demos</a></li>
+  <li><a href="credits.html">credits</a></li>
+  <li><a href="addons.html">addons</a></li>	
   <li><a href="https://github.com/shaurya1709/vibra-UI">github</a></li>	
 </ul>
-<div>
-<img style="float: right; height: 500px; width: 500px; transform: rotate(-5deg); outline: solid #555 2px;" src="credits_pic.jpeg">
-<h1 class="head" style="text-align: justify;">credits and contact</h1>
-<h1>shaurya singh - designer, programmer</h1>
-<h1 style="text-transform: none">Contact: shauryaville@gmail.com</h1>
-</div>
+<h1 class="head">demos</h1>
+<h1>classes</h1>
+<h2 id="navbar-demo">navbar</h2>
+<ul class="navbar">
+	<li><a>Page 1</a></li>
+	<li><a id="active">Page 2</a></li>
+</ul>
+<p>source code:</p>
+<pre class="code">
+&lt;ul class="navbar"&gt;
+	&lt;li&gt;&lt;a&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li>&lt;a id="active">Page 2&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
+<h1>class pairs</h1>
+<h2>glow</h2>
+<h3>button</h3>
+<button class="glow">button</button>
+<p>source code:</p>
+<pre class="code">
+&lt;button class="glow">button&lt;/button>
+</pre>
+<h3>navbar</h3>
+<ul class="navbar glow">
+	<li><a>Page 1</a></li>
+	<li><a id="active">Page 2</a></li>
+</ul>
+<p>source code:</p>
+<pre class="code">
+&lt;ul class="navbar glow"&gt;
+	&lt;li&gt;&lt;a&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li>&lt;a id="active">Page 2&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
+<h2>push</h2>
+<h3>button</h3>
+<button class="push">button</button>
+<p>source code:</p>
+<pre class="code">
+&lt;button class="push">button&lt;/button>
+</pre>
+<h3>navbar</h3>
+<ul class="navbar push">
+	<li><a>Page 1</a></li>
+	<li><a id="active">Page 2</a></li>
+</ul>
+<p>source code:</p>
+<pre class="code">
+&lt;ul class="navbar push"&gt;
+	&lt;li&gt;&lt;a&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li>&lt;a id="active">Page 2&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
+<h2 id="ccp">combining class pairs</h2>
+<p>a navbar with classes glow and push</p>
+<ul class="navbar glow push">
+	<li><a>Page 1</a></li>
+	<li><a id="active">Page 2</a></li>
+</ul>
+<p>source code:</p>
+<pre class="code">
+&lt;ul class="navbar glow push"&gt;
+	&lt;li&gt;&lt;a&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li>&lt;a id="active">Page 2&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
+<h1>animations</h1>
+<h2>bounce</h2>
+<div style="height: 100px; width: 100px; animation: bounce 2s infinite; background: red; margin: 100px"></div>
+<p>source code</p>
+<pre class="code">&lt;div style="height: 100px; width: 100px; animation: bounce 2s infinite; background: red">&lt;/div></pre>
+<h2>flip</h2>
+<button style="animation: flip 1s infinite">i flip!</button>
+<p>Source Code</p>
+<pre class="code">
+&lt;button style="animation: flip 1s infinite">i spin!&lt;/button>
+</pre>
+<h2>fadeback</h2>
+<p style="animation: fadeback 1s infinite">i fade in and out</p>
+<p>Source Code</p>
+<pre class="code">
+&lt;p style="animation: fadeback 1s infinite">i fade in and out&lt;/button>
+</pre>
+<h2>spin</h2>
+<button style="animation: spin 1s infinite">i spin!</button>
+<p>source code</p>
+<pre class="code">&lt;button style="animation: spin 1s infinite">I Spin!&lt;/button></pre>
+<h2>slide-in animations</h2>
+<h3>down</h3>
+<button style="animation: slidedown 1.5s infinite">i slide!</button>
+<p>source code</p>
+<pre class="code">&lt;button style="animation: slidedown 1.5s infinite">i slide!&lt;/button></pre>
+<h3>up</h3>
+<button style="animation: slideup 1.5s infinite">i slide!</button>
+<p>source code</p>
+<pre class="code">&lt;button style="animation: slideup 1.5s infinite">i slide!&lt;/button></pre>
+<h3>left</h3>
+<button style="animation: slideleft 1.5s infinite">i slide!</button>
+<p>source code</p>
+<pre class="code">&lt;button style="animation: slideleft 1.5s infinite">i slide!&lt;/button></pre>
+<h3>right</h3>
+<button style="animation: slideright 1.5s infinite">i slide!</button>
+<p>source code</p>
+<pre class="code">&lt;button style="animation: slideright 1.5s infinite">i slide!&lt;/button></pre>
+<h1>icon buttons</h1>
+<button class="icon-button" style="text-transform: none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 24 24" width="24" height="24" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="m8 6.641 1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0v5.641zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z"/></svg>Download File "Never Gonna Give You Up.docx"</button>
+<pre class="code">&lt;button class="icon-button" style="text-transform: none;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 24 24" width="24" height="24" preserveAspectRatio="xMinYMin" class="icon__icon">&lt;path d="m8 6.641 1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0v5.641zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z"/>&lt;/svg>Download File "Never Gonna Give You Up.docx"&lt;/button></pre>
+<h1 id="emoji">emoji</h1>
+<h2>Noto Color Emoji</h2>
+<p>that joke was so funny 😂</p>
+<p>noto color emoji supports all the latest emojis from android 12.</p>
+<h2>browser</h2>
+<p style="font-family: sans-serif">that joke was so funny 😂</p>
+<script src="stable.js"></script>
 <style>
-	@import url(style.css);
-	
-	h1 {display: block;}
-	
-	@media (hover: none) {
-		img {
-			display: none;
-		}
-	}
+	@import url(style.css);	
 </style>
