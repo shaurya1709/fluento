@@ -9,10 +9,11 @@
   <li><a href="design.html">design</a></li>
   <li><a href="demo.html">Demos</a></li>
   <li><a href="credits.html">credits</a></li>
-  <li><a href="addons.html">addons</a></li>	
+  <li><a href="addons.html">addons</a></li>
+  <li><a href="https://github.com/shaurya1709/vibra-UI">github</a></li>
 </ul>
 
-<h1 class="head">aPI documentation</h1>
+<h1 class="head">aPI docs</h1>
 <h1>cSS configuration</h1>
 <pre class="code">
 :root {
@@ -30,7 +31,7 @@
 <h2>navbar</h3>
 <p>specifies a <span class="code">navbar</span>.</p>
 <p><a href="demo.html#navbar">click here for example</a></p>
-<p>syntax:</p>
+<h3>syntax</h3>
 <pre class="code">
 &lt;ul class="navbar"&gt;
 	&lt;li>&lt;a href="page 1 url">Page 1&lt;/a&gt;&lt;/li&gt;
@@ -39,10 +40,14 @@
 </pre>
 <h3>active</h3>
 <p>the active iD is used inside a <span class="code">navbar</span> to specify the active page and its styling.</p>
-<p>syntax:</p>
+<h3>syntax</h3>
 <pre style="text-transform: none; font-family: source code pro; font-size: 14px;">&lt;li id="active"&gt;text&lt;/li&gt;</pre>
 <h2>shadowed</h2>
 <p>adds a shadow to the element using the <span style="font-family: source code pro; font-size: 14px; text-transform: none;">box-shadow</span> property</p>
+<h2>icon-button</h2>
+<p>icon buttons allow icons inside a button. as listed in the design page, vibra uI uses the jam icon project.</p>
+<h3>syntax</h3>
+<pre class="code">रब ने बना दी जोड़ी</pre>
 <h1>class pairs</h1>
 <p>class pairs combine two or more <span class="code">classes</span> to style the element differently.</p>
 <h2>glow</h2>
@@ -57,9 +62,9 @@
 &lt;/ul&gt;
 </pre>
 <h2>sticky</h2>
-<p>makes a navbar or button sticky</p>
+<p>makes a navbar sticky</p>
 <h3>applicable elements</h3>
-<p class="nocaps">navbar, button</p>
+<p class="nocaps">navbar</p>
 <h3>code</h3>
 <pre class="code">
 &lt;ul class="navbar sticky"&gt;
@@ -68,9 +73,7 @@
 &lt;/ul&gt;
 </pre>
 <h3>additional requirements</h3>
-<h4>buttons</h4>
-<p>buttons require one of these values be different from <span class="code">auto</span></p>
-<p>top, bottom, left, right</p>
+<p><em>none</em></p>
 <h2>push</h2>
 <p>adds a push effect to the element on click</p>
 <h3>applicable elements</h3>
@@ -83,26 +86,24 @@
 <p>navbar + sticky = sticky navbar.<p>navbar + glow = navbar with glow in hovered links.<p>therefore, navbar + sticky + glow = the properties of sticky and the properties of glow added to the navbar</p>
 <a href="demo.html#ccp">example</a>
 <h1>animations</h1>
-<h2>Getting Started</h2>
-<p>to use animations, just add the animation <span class="code">class</span> along with the <span class="code">class</span> for the animation required. animations are also <span class="code">class pairs</span>. an animation requires four <span class="code">classes</span>. they are <span class="code">animation</span>, <span class="code">animation</span> length, <span class="code">animation</span> type and <span class="code">animation</span> iteration count</p>
-<h2>Animation Length</h2>
-<p>possible values: <span class="code">regular, slow, slower, fast, faster</span>. can be also set using the animation-duration property</p>
-<h2>Animation Type</h2>
-<p>possible values: <span class="code">spin, fadeback</span>.</p>
-<h3>spin</h3>
-<p class="nocaps">Class: spin</p>
-<p>spins the element infinitely</p>
-<h3>fadeback</h3>
-<p class="nocaps">Class: fadeback</p>
-<p>fades the text in and out.</p>
-<h2>Animation Iteration Count</h2>
-<p>possible values: <span class="code">once, infinite</span>. can also be set using the animation-iteration-count property.</p>
+<p>vibra uI includes multiple animations out-of-the-box for developers to use. just set up the properties with values like spin, fadeback etc.</p>
+<h2>Pre-Included Animations</h2>
+<p>vibra uI comes pre-included with the following animations:</p>
+<ul>
+	<li>fadeback</li>
+	<li>spin</li>
+	<li>flip</li>
+	<li>bounce</li>
+	<li>slideleft</li>
+	<li>slideright</li>
+	<li>slideup</li>
+	<li>slidedown</li>
+</ul>
 <style>
 	@import url(style.css);
 			
 	h2 {text-transform: none;}
-	
-	.code {font-family: source code pro; font-size: 14px; text-transform: none;}
+
 	
 	.nocaps {text-transform: none;}
 </style>
