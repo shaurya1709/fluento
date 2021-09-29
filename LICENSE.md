@@ -1,4 +1,4 @@
-# Vibra Public Use License, V 1.0
+# Vibra Public Use License, V 1.0: Dev Edition
 
 #### Kindly have a look at the definitions for better clarity
 
