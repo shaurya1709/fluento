@@ -103,13 +103,13 @@ table th {
         100% { transform: scale(1,1)      translateY(0); }
     } 
 
-body {font-family: var(--font), Emoji, Noto Sans, var(--font-type), sans-serif; overflow-x: hidden; background: var(--main-color); color: var(--text-color); text-transform: var(--text-case-filter); transition: all 0.3s ease}
+body {font-family: var(--font), Emoji, Noto Sans, sans-serif; overflow-x: hidden; background: var(--main-color); color: var(--text-color); text-transform: var(--text-case-filter); transition: all 0.3s ease}
 
 body * {
 	transition: inherit;
 }
 
-button.icon-button svg {height: 1rem; float: left; margin-left: 0px !important}
+button.icon-button svg {height: 1rem; float: left; margin-left: 0px}
 
 button.icon-button {
 	display: flex; justify-content: center; align-items: center; text-transform: var(--text-case-filter);
