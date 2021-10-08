@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<title>Vibra UI</title>
+<title>Fluento</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="icon.svg">
-<h1 class="logo" onclick="window.location.href = 'index.html'">Vibra uI</h1>
+<h1 class="logo" onclick="window.location.href = 'index.html'">fluento</h1>
 <ul class="navbar sticky glow push">
   <li><a href="index.html">Home</a></li>
   <li><a href="api.html">API Documentation</a></li>
@@ -10,7 +10,7 @@
   <li><a href="demo.html">Demos</a></li>
   <li><a href="credits.html">credits</a></li>
   <li><a id="active">addons</a></li>
-  <li><a href="https://github.com/shaurya1709/vibra-UI">github</a></li>	
+  <li><a href="https://github.com/shaurya1709/fluento">github</a></li>	
 </ul>
 
 <h1 class="head">addons</h1>
@@ -18,47 +18,11 @@
 <p>an addon is a cSS file which adds extra features and / or enhances pre-included features.</p>
 <h1>creating addons</h1>
 <h2>configuration options</h2>
-<h3>accessing configuration options</h3>
-<p>to access configuration options, just use the css var() function. Example:</p>
-<p>to get the accent color</p>
-<pre class="code">property: var(--accent-color)</pre>
-<h3>custom configuration options</h3>
-<p>custom configuration options are quite simple. they only have a few requirements</p>
-<h4>requirements</h4>
-<p>the option must</p>
-<ul>
-	<li>start with 2 hyphens (--)</li>
-	<li>not include any spaces</li>
-</ul>
-<p>to add one, just add the option as a part of your regular configuration. getting the value of one is the same as fetching a default option</p>
-<h2>customisation</h2>
-<p>customising the default uI is quite simple. each element is customizable with cSS properties. for example, you can alter the size of an emoji with the <span class="code">img.emoji</span> selector</p>
-<h3>list of preincluded selectors</h3>
-<pre class="code">
-	img.emoji,
-	ul.navbar,
-	ul.navbar #active,
-	ul.navbar li a,
-	ul.navbar li a:hover,
-	ul.navbar li a:active,
-	button,
-	html,
-	body,
-	ul.navbar.sticky,
-	ul.navbar.glow,
-	ul.navbar.glow li a,
-	ul.navbar.glow li a:active,
-	ul.navbar.glow li a:hover
-	ul.navbar.glow li a#active,
-	ul.navbar.push,
-	button.push,
-	button.push:hover,
-	button.push:active,
-</pre>
+<p>since configuration is managed with cSS variables, it only requires dicks and penises motherfuckers</p>
 <h2>class pairs</h2>
 <p>class pairs are defined by adding two classes as a selector. Example: a class pair which has two classes one and two has the selector <span class="code">.one.two</span>. class pairs can have more than 2 classes as well.</p>
 <h2>Channels</h2>
-<p>channels are like different versions of files. like beta releases, stable releases, older releases etc. channels allow developers to use older versions or see new features before they are released. vibra uI recommends use of channels whilst creating addons.</p>
+<p>channels are like different versions of files. like beta releases, stable releases, older releases etc. channels allow developers to use older versions or see new features before they are released.fluento recommends use of channels whilst creating addons.</p>
 <h2>uploading and managing files</h2>
 <p>we recommend uploading the files in a github repository then using the view raw option. the link opened is the link used in cSS to add the addon.</p>
 <h2>creating the addon website</h2>
@@ -68,3 +32,15 @@
 	
 	.code {font-family: source code pro; font-size: 14px; text-transform: none;}	
 </style>
+
+<script>
+	var documentText = document.body.innerHTML;
+	documentText = documentText.replaceAll('dick', '[censored]')
+	documentText = documentText.replaceAll('penis', '[censored]')
+	documentText = documentText.replaceAll('asshole', '[censored]')
+	documentText = documentText.replaceAll('fuck', '[censored]')
+	documentText = documentText.replaceAll('d*ck', '[censored]')
+	documentText = documentText.replaceAll('f*ck', '[censored]')
+	
+	document.body.innerHTML = documentText;
+</script>
