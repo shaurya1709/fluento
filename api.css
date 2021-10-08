@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Baloo+Bhaina+2&family=Baloo+Chettan+2&family=Baloo+Da+2&family=Baloo+Paaji+2&family=Baloo+Tamma+2&family=Baloo+Tammudu+2&family=Baloo+Thambi+2&Work+Sans&family=Open+Sans&family=Montserrat&family=Noto+Sans&family=Neucha&family=Source+Code+Pro&family=Roboto+Mono&family=Amatic+SC&family=Roboto&family=Inter&family=Roboto+Slab&family=Roboto+Condensed&family=Raleway&family=Merriweather&family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&family=Quicksand&family=Space+Mono&family=DM+Mono&family=DM+Sans&family=DM+Serif+Text&family=DM+Serif+Display&family=Work+Sans&family=Titillium+Web&family=Lobster&family=Comfortaa&family=Staatliches&family=Pacifico&family=Permanent+Marker&family=Patrick+Hand&family=Poppins&family=Alegreya&family=B612&family=Mnavi&family=Varela&family=Vollkorn&family=IBM+Plex+Sans&family=Crimson+Text&family=Cairo&family=BioRhyme&family=Karla&family=Lora&family=Frank+Ruhl+Libre&family=Playfair+Display&family=Archivo&family=Spectral&family=Fjalla+One&family=Rubik&family=Source+Sans+Pro&family=Cardo&family=Cormorant&family=Rakkas&family=Concert+One&family=Yatra+One&family=Orvo&family=Lato&family=Abril+Fatface&family=PT+Serif&family=Old+Standard+TT&&family=Oswald&family=Arvo&family=IBM+Plex+Serif&family=IBM+Plex+Mono&family=Qahiri&family=Zen+Loop&family=Lexend&family=Asar&family=Hahmlet&family=Vibur&family=Josefin+Slab&family=Style+Script&family=Atkinson+Hyperlegible&family=Space+Grotesk&family=Nunito&family=Inconsolata&family=Yomogi&family=Alegreya+SC&family=Mnavish&family=Hind+Siliguri&family=Georama&family=Andada+Pro&family=Recursive&family=Heebo&family=Libre+Franklin&family=Epilogue&family=Rhodium+Libre&family=Nunito+Sans&family=Qahiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Baloo+Bhaina+2&family=Baloo+Chettan+2&family=Baloo+Da+2&family=Baloo+Paaji+2&family=Baloo+Tamma+2&family=Baloo+Tammudu+2&family=Baloo+Thambi+2&Work+Sans&family=Open+Sans&family=Montserrat&family=Noto+Sans&family=Neucha&family=Source+Code+Pro&family=Roboto+Mono&family=Amatic+SC&family=Roboto&family=Inter&family=Roboto+Slab&family=Roboto+Condensed&family=Raleway&family=Merriweather&family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&family=Quicksand&family=Space+Mono&family=DM+Mono&family=DM+Sans&family=DM+Serif+Text&family=DM+Serif+Display&family=Work+Sans&family=Titillium+Web&family=Lobster&family=Comfortaa&family=Staatliches&family=Pacifico&family=Permanent+Marker&family=Patrick+Hand&family=Poppins&family=Alegreya&family=B612&family=Mnavi&family=Varela&family=Vollkorn&family=IBM+Plex+Sans&family=Crimson+Text&family=Cairo&family=BioRhyme&family=Karla&family=Lora&family=Frank+Ruhl+Libre&family=Playfair+Display&family=Archivo&family=Spectral&family=Fjalla+One&family=Rubik&family=Source+Sans+Pro&family=Cardo&family=Cormorant&family=Rakkas&family=Concert+One&family=Yatra+One&family=Orvo&family=Lato&family=Abril+Fatface&family=PT+Serif&family=Old+Standard+TT&&family=Oswald&family=Arvo&family=IBM+Plex+Serif&family=IBM+Plex+Mono&family=Qahiri&family=Zen+Loop&family=Lexend&family=Asar&family=Hahmlet&family=Vibur&family=Josefin+Slab&family=Style+Script&family=Atkinson+Hyperlegible&family=Space+Grotesk&family=Nunito&family=Inconsolata&family=Yomogi&family=Alegreya+SC&family=Mnavish&family=Hind+Siliguri&family=Georama&family=Andada+Pro&family=Recursive&family=Heebo&family=Libre+Franklin&family=Epilogue&family=Rhodium+Libre&family=Nunito+Sans&family=Qahiri&family=Cabin&family=Red+Hat+Display&family=Red+Hat+Text&family=Sora&display=swap");
 	
 @font-face {
 	font-family: Emoji;
 	src: url(emoji.ttf)	
+}
+
+	
+@font-face {
+	font-family: EmojiWin;
+	src: url(emoji_win.ttf)	
 }
 
 	button.push:active {
@@ -18,8 +24,6 @@ table td, table th {
   border: 1px solid #ddd;
   padding: 8px;
 }
-
-table tr:nth-child(even){background-color: var(--main-color);}
 
 table tr:first-of-type {
   padding-top: 12px;
@@ -39,8 +43,6 @@ table td, table th {
   border: 1px solid #ddd;
   padding: 8px;
 }
-
-table tr:nth-child(even){background-color: var(--main-color);}
 
 table th {
   padding-top: 12px;
@@ -109,6 +111,8 @@ body * {
 	transition: inherit;
 }
 
+ul.navbar {background: var(--main-color)}
+
 button.icon-button svg {height: 1rem; float: left; margin-left: 0px}
 
 button.icon-button {
@@ -137,15 +141,18 @@ scroll-behavior: var(--scroll-style);
 }
 
 
-button {border-radius: 124567890px; background: var(--accent-color); border: none; color: var(--text-color-alternate); padding: 10px 50px; font-family: var(--font); font-weight: bold; font-family: var(--font); fill: var(--text-color-alternate); text-transform: var(--text-case-filter);}
+button {border-radius: 124567890px; background: var(--accent-color); border: none; color: var(--text-color-alternate); padding: 10px 50px; font-family: var(--font); font-weight: bold; font-family: var(--font); fill: var(--text-color-alternate); text-transform: var(--text-case-filter); cursor: pointer}
 
+[contenteditable="true"] {
+	outline: none;
+}
 
 /* Mobile */
 @media (hover: none) {
 	
-	body {overflow-x: scroll; -webkit-tap-highlight-color: transparent}
+	body {overflow-x: hidden !important; -webkit-tap-highlight-color: transparent}
 	
-	body * {overflow-x: inherit;}
+	body p {overflow-x: scroll;}
 	
 	.navbar li a {width: 100%;}	
 	
@@ -164,7 +171,6 @@ button.icon-button {
 	ul.navbar {
   		list-style-type: none;
   		overflow-x: hidden;
-		background: var(--main-color);
 		display: inline-grid;
 		margin: 0px;
 		justify-content: center;
@@ -228,7 +234,6 @@ body { margin: var(--page-margin);}
   		margin: 0;
   		padding: 0;
   		overflow: hidden;
-		background: var(--main-color);
   	}
 	
 	ul.navbar.sticky {
