@@ -9,7 +9,7 @@ Permission is granted to herebly to anyone having a copy of this **package** to 
 
 ## Attribution
 
-Attribution is required ANY for commercial use of any product.
+Attribution is required for ANY for commercial use of any product.
 
 The attribution HAS TO COMPLY TO THESE TERMS for ANY COMMERCIAL USE:
 
