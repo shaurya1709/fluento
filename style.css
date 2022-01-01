@@ -21,7 +21,7 @@
 	font-size: 6vh;
 }
 
-.logo {
+h1.logo {
 	font-size: 12vh;
 	user-select: none;
 	cursor: pointer;
